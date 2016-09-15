@@ -68,6 +68,9 @@ _Credentials:_
   python create_data_libraries.py
   ```
   - Go through all training materials at http://tinyurl.com/GalaxyCamPractical from course website  http://galaxycam.github.io/
+    - Check getting_started / NBARC / SequenceInfo.tabular is tabular
+
+> Stopped before section 'Finding coding exons with highest SNP density' (top of page 10). 
 
 * (6) Share instance
   - on the first cloudman instance http://52.207.211.93/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dasboard > Instances if workers started
