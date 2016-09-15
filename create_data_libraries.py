@@ -13,7 +13,7 @@ $ python create_data_libraries.py
 from bioblend import galaxy
 import os
 
-gi = galaxy.GalaxyInstance('http://52.90.209.254/', 'f005d6227c38c3917610c6fdd8267aab')
+gi = galaxy.GalaxyInstance('http://52.207.211.93/', 'fd2f96f53f35533dbf669c68aeae3b89')
 lc = galaxy.libraries.LibraryClient(gi)
 
 # Create training library every time from scratch
@@ -49,4 +49,3 @@ for f in FOLDERS:
                 if os.path.isfile(os.path.join('data_libraries', f, subf, filename)):
                     print filename
                     lc.upload_file_from_local_path(library_id=training_lib['id'], file_local_path=os.path.join('data_libraries', f, subf, filename), folder_id=training_subfolder[0]['id'], dbkey='hg19')
-
