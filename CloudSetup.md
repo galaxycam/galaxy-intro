@@ -50,9 +50,13 @@ _Credentials:_
   - **Already installed.** column_maker (under Text Manipulation > new tool called 'Compute')
   - **Already installed.** ucsc_custom_track (under Graph/Display Data)
   - Needed to import workflow https://usegalaxy.org/u/galaxyproject/p/galaxy-variant-101
-    - Add or Replace Groups, id toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ARRG/1.56.0, version 1.56.0 - 2 (2014-02-21) from Galaxy Test tool shed
-    - Merge BAM Files, id toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.1.2, version 1.1.2, version 0 (2013-08-26) from Galaxy Main tool shed
+    - missing tool: Add or Replace Groups, id toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ARRG/1.56.0, version 1.56.0
+      - Search 'picard' and install from devteam v4 (2014-02-21) into 'NGS: Picard 1.56'
+    - missing tool: Merge BAM Files, id toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.1.2, version 1.1.2
+      - Search 'sam_merge' and install from devteam v0 (2013-08-26)
     - FreeBayes, id toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.0.3, version 0.0.3, version 1 (2013-12-16) from Galaxy Test tool shed
+      - Search on Test tool shed 'freebayes' and install from dev v1 (2013-12-16)
+
 
 
 * (5) Install training course data and test
@@ -70,7 +74,6 @@ _Credentials:_
   - Go through all training materials at http://tinyurl.com/GalaxyCamPractical from course website  http://galaxycam.github.io/
     - Check getting_started / NBARC / SequenceInfo.tabular is tabular
 
-> Stopped before section 'Finding coding exons with highest SNP density' (top of page 10). 
 
 * (6) Share instance
   - on the first cloudman instance http://52.207.211.93/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dasboard > Instances if workers started
