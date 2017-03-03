@@ -27,29 +27,29 @@ _Credentials:_
 | Setup Keys        | Values |
 | ----------------- | ------ |
 | Access Key Id     | AKIAILEQVNU6GGPMXUGA    |
-| Secret Access Key | bsV...                  |
+| Secret Access Key | bsV... (in rootkey.csv) |
 | Cluster Name      |	galaxycam_201609        |
 | Cluster Password  | training                |
 | Instance Type     |	Compute optimized 2x large (c3.2xlarge) (8vCPU/15GB RAM/80GB SSD) (c3.2x large recommended by Dave) |
 
 
 * (2) Take note of newly created Galaxy server's IP address
-  - IP address: `52.207.211.93`
-  - http://52.207.211.93/cloud; credentials: ubuntu | training
+  - IP address: `52.55.43.141`
+  - http://52.55.43.141/cloud; credentials: ubuntu | training
 
 
 * (3) Create Galaxy admin account
-  - Go to CloudMan admin console http://52.207.211.93/cloud/root/admin
+  - Go to CloudMan admin console http://52.55.43.141/cloud/root/admin
   - Enter email address for admin account
   - Galaxy server will be restarted automatically
   - Go to Galaxy and Register as a new user and login as admin
 
 
 * (4) Install tools in Galaxy
-  - charts (update charts in Admin > Manage installed tool shed repositories)
+  - charts (update charts in Admin > Manage installed tool shed repositories) - latest version from 2015-02-27
   - **Already installed.** column_maker (under Text Manipulation > new tool called 'Compute')
   - **Already installed.** ucsc_custom_track (under Graph/Display Data)
-  - Needed to import workflow https://usegalaxy.org/u/galaxyproject/p/galaxy-variant-101
+  - (check later) Needed to import workflow https://usegalaxy.org/u/galaxyproject/p/galaxy-variant-101
     - missing tool: Add or Replace Groups, id toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ARRG/1.56.0, version 1.56.0
       - Search 'picard' and install from devteam v4 (2014-02-21) into 'NGS: Picard 1.56'
     - missing tool: Merge BAM Files, id toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.1.2, version 1.1.2
@@ -63,7 +63,7 @@ _Credentials:_
   - Generate API key in Galaxy and paste it into [the script](https://github.com/galaxycam/galaxy-intro/blob/master/create_data_libraries.py) which upload data into Galaxy.
   - Create data libraries in Galaxy
   ```
-  ssh ubuntu@52.207.211.93
+  ssh ubuntu@52.55.43.141
   virtualenv venv
   source venv/bin/activate
   pip install bioblend

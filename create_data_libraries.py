@@ -13,7 +13,7 @@ $ python create_data_libraries.py
 from bioblend import galaxy
 import os
 
-gi = galaxy.GalaxyInstance('http://52.207.211.93/', 'fd2f96f53f35533dbf669c68aeae3b89')
+gi = galaxy.GalaxyInstance('http://52.55.43.141/', '3b8a7dffd8de121e8667aedd859b8dee')
 lc = galaxy.libraries.LibraryClient(gi)
 
 # Create training library every time from scratch
