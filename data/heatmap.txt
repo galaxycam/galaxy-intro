@@ -1,4 +1,3 @@
-Gene	Sample	Value
 GATA3	NKI_4	0.489
 CA12	NKI_4	-0.349
 THSD4	NKI_4	-0.261
