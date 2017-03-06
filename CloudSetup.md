@@ -67,8 +67,8 @@ _Credentials:_
 
 
 * (6) Share instance
-  - on the first cloudman instance http://52.207.211.93/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dasboard > Instances if workers started
-  - on http://52.207.211.93/cloud click on share icon next to the cluster name, then 'Share-an-instance', select 'Public' and click 'share-an-instance'
+  - on the first cloudman instance http://XX.XXX.XXX.XX/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dashboard > Instances if workers started
+  - on http://XX.XXX.XXX.XX/cloud click on share icon next to the cluster name, then 'Share-an-instance', select 'Public' and click 'share-an-instance'
 
 
 * (7) Create a new instance
