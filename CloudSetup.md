@@ -53,7 +53,7 @@ _Credentials:_
 
 * (5) Install training course data and test
   - Generate API key in Galaxy and paste it into [the script](https://github.com/galaxycam/galaxy-intro/blob/master/create_data_libraries.py) which upload data into Galaxy.
-  - Create data libraries in Galaxy from your local computer
+  - Create data libraries in Galaxy from your local computer (no need to login onto the galaxy server)
   ```
   virtualenv venv
   source venv/bin/activate
@@ -62,19 +62,39 @@ _Credentials:_
   cd galaxy-intro
   python create_data_libraries.py
   ```
-  - Go through all training materials at http://tinyurl.com/GalaxyCamPractical from course website  http://galaxycam.github.io/
+  - Go through all training materials from course website  http://galaxycam.github.io/
     - Check getting_started / NBARC / SequenceInfo.tabular is tabular
 
 
-* (6) Share instance
+* (6) Increase disk space to 800GB when running only one instance to give 40GB to each user.
+  - increase disk space on cloudman interface: click on icon 'Grow' to expend disk size
+  - activate quota by editing `galaxy.ini` file on server
+  ```
+  ssh ubuntu@[IP address]
+  cd galaxy-app/config
+  sudo vi galaxy.ini
+  # add these lines at the bottom of the file
+  enable_quotas = True
+  allow_user_dataset_purge = True
+  ```
+  - restart Galaxy
+  - set quotas from the admin interface of Galaxy to 40GB as default for registered users
+
+
+* (7) Check you're able to add as many worker nodes as needed and there is no restriction on your Amazon account, otherwise ask for extending the limit to Amazon: c3.2xlarge instances' limit should be set to 40.
   - on the first cloudman instance http://XX.XXX.XXX.XX/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dashboard > Instances if workers started
+
+
+* (8) Create a share instance if you need more than one
   - on http://XX.XXX.XXX.XX/cloud click on share icon next to the cluster name, then 'Share-an-instance', select 'Public' and click 'share-an-instance'
 
 
-* (7) Create a new instance
+* (9) Create a new instance
   - Go to https://launch.usegalaxy.org/ and use shared instance named `cm-10b6c9703d6981ec5f1cd7c4f7be25a8/shared/2016-03-14--18-32/`
 
 
-* (8) Update training materials with new IP addresses.
+* (10) Update training materials with new IP addresses.
 
-* (9) Check cost
+* (11) Check cost
+
+* (12) Turned off all the worker nodes as soon as the course is finished to limit the cost as much as possible.
