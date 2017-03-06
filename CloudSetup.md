@@ -46,7 +46,7 @@ _Credentials:_
 
 
 * (4) Install tools in Galaxy
-  - charts (update charts in Admin > Manage installed tool shed repositories) - latest version from 2015-02-27, not sure to install it this time
+  - charts (update charts in Admin > Manage installed tool shed repositories) - latest version from 2015-02-27
   - **Already installed.** column_maker (under Text Manipulation > new tool called 'Compute')
   - **Already installed.** ucsc_custom_track (under Graph/Display Data)
 
@@ -66,26 +66,15 @@ _Credentials:_
     - Check getting_started / NBARC / SequenceInfo.tabular is tabular
 
 
-* (6) Install tools associated with a workflow
-
-  - Needed to import workflow https://usegalaxy.org/u/galaxyproject/p/galaxy-variant-101
-    - missing tool: Add or Replace Groups, id toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ARRG/1.56.0, version 1.56.0
-      - Search 'picard' and install from devteam v4 (2014-02-21) into 'NGS: Picard 1.56'
-    - missing tool: Merge BAM Files, id toolshed.g2.bx.psu.edu/repos/devteam/sam_merge/sam_merge2/1.1.2, version 1.1.2
-      - Search 'sam_merge' and install from devteam v0 (2013-08-26)
-    - FreeBayes, id toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.0.3, version 0.0.3, version 1 (2013-12-16) from Galaxy Test tool shed
-      - Search on Test tool shed 'freebayes' and install from dev v1 (2013-12-16)
-
-
-* (7) Share instance
+* (6) Share instance
   - on the first cloudman instance http://52.207.211.93/cloud click on 'Add nodes' to get 10 workers & check on amazon EC2 dasboard > Instances if workers started
   - on http://52.207.211.93/cloud click on share icon next to the cluster name, then 'Share-an-instance', select 'Public' and click 'share-an-instance'
 
 
-* (8) Create a new instance
+* (7) Create a new instance
   - Go to https://launch.usegalaxy.org/ and use shared instance named `cm-10b6c9703d6981ec5f1cd7c4f7be25a8/shared/2016-03-14--18-32/`
 
 
-* (9) Update training materials with new IP addresses.
+* (8) Update training materials with new IP addresses.
 
-* (10) Check cost
+* (9) Check cost
